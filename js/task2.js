@@ -11,11 +11,11 @@ var Hello = React.createClass({
         }
     },
 
-    getInfo: function (event) {
+    getInfo: function (e) {
         this.setState({
-            name: event.target.value
+            name: e.target.value
         });
-        if (!event.target.value) {
+        if (!e.target.value) {
             this.setState(this.getInitialState());
         }
     },
